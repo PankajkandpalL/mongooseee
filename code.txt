@@ -1,0 +1,165 @@
+// CODING CONVENTIONS 
+
+Writing clean code?
+ - the code you have written should be clean and understandable by anyone (including you)
+
+ for ex -
+    - Variable Name
+        - Why it exists ?, What it does?, how it is used? 
+
+- Refactor
+
+if(age >= 18){
+    return "GOOD TO GO"
+}
+else{
+    return "NOT GOOD TO GO"
+}
+
+Age validation, eligible to get married or not, is eligible for Driving License or not
+
+const minimumAgeForDL = 19;
+
+
+if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}if(age>minimumAgeForDL){
+    return "Applicable to apply for DL"
+}
+else{
+    return "Age criteria didn't matched"
+}
+
+// use variables to store those numbers and use them
+
+Intention-Revealing Names
+
+let d; // elapsed time in days
+
+
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+for(let i = 0;i<d ;i++)
+
+let daysSinceCreation;
+let elapsedTimeInDays;
+
+
+let daysSinceCreation; // camelCase
+let days_since_creation; // snake_case
+let Dayssincecreation; // Pascal case
+
+let dayPerWeek = 7;
+let week_per_month = 4;
+
+---------
+// HIGHLIGHTED WORD 
+
+// pascalCase
+
+
+
+---------
+
+// with this we are checking if the user is adming and he has the permission to fetch user or not
+if(user.data == "Admin" && user.data.nestedData.info == "has role to fetch users")
+
+** Explain yourself in code
+
+if(user.isAdmin() && user.hasPermToFetchUsers){
+
+}
+
+--------
+
+Copyright
+// Copyright MIT LICENSE
+
+** Noise Comments
+
+    this code is there for a reason, and too important to delete it. 
+    might be afraid to delete the commented code.
+
+
+** TO-DO Comments
+
+    //to-do - this code can be removed once we have a re-usable fn with the same functionality
+
+     try {
+         await mongoose.connect("mongodb+srv//:pkpalgaming:888888@cluster0.lniqqoc.mongodb.net/todos?retryWrites=true&w=majority&appName=Cluster0")
+         console.log("Connected to DB");
+     } catch (error) {
+         console.error(error);
+         process.exit(1);
+     }
+
+// functions naming
+
+    either a function should modify or it should delete
+    - it should have only one functionality
+
+// I want to get all the users in my db.
+
+    - function fetchAllUsers
+
+** First make it work, then make it right **
+
+let countEvens = 0;
+let limit = 7;
+
+for(let i = 0;i<limit;i++){
+    if(i%2==0){
+        countEvens++
+    }
+}
+
+console.log(countEvens);
